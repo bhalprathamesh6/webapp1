@@ -4,8 +4,8 @@ pipeline {
         stage('Clone the repo') {
             steps {
                 echo 'clone the repo'
-                sh 'rm -fr html'
-                sh 'git clone https://github.com/dmccuk/html.git'
+                sh 'rm -fr webapp1'
+                sh 'git clone https://github.com/bhalprathamesh6/webapp1.git'
             }
         }
         stage('push repo to remote host') {
